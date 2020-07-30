@@ -1,0 +1,15 @@
+
+web dev learning 29 07 2020 
+Because app.js component has a this.state   a peice of data that describes our app so we call it a smart
+component.  as oppsoe to just having a function. 
+life-cycle  methods in react.  Using an API to get users,  life-cycle : mounting
+, updating and unmounting.  mounting is the start of the app. life-cycle hooks.  
+run componentDidMount();   console log to see the order things get done in. 
+why did render run again?  because we updated the state in componentdidmount();
+in updting it runs render again.   lets do a cool way to grab a list. fetch().then()
+now refresh. fetch and response.   we are doing some magic here with json. we wil get to this later. 
+fetch()  is a method on the window object. its a tool for us to make requests to servers
+react is just javascript.  if it is slow then w can do an if statement.  with an else that returns 
+robofriends. tha displays loading.  make a loading bar.   interact wewith cmponenets.  the basics in react.
+Our react knowledge. 
+
