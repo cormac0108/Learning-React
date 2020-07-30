@@ -1,0 +1,29 @@
+
+our paretn  react  app component.  imports other components. it looks like we want a search box component. 
+now how can we make this interactive?   the searchboc xomponent needs to communicate with the card list.
+Remember one-way data flow?   this is where the idea of  state comes in.  pure compoenents (functions) 
+that receive something and return something (dumb functions )    props never change. they are jsut inputs
+that we get and we never modify them.    STATE - means the desccription of your app. state can change. 
+props are things that come out of state. its a synthax youll have to get used to.   lets do state. 
+do use state  we do constructor() { }  and in our constructor we can declare state. 
+remember advanced objects?  we need to call super( )  before we ddo this.state = { ... }  
+this.state   is what describes our app.   things that can change.  this.state.robots
+onSearchChange ( )  is a function that we are going to make up ..  remember onchange="" from html? 
+
+event.target.value    - i know all this new stuff is tough - but you need to practice. 
+one way data flow .  remember how we call the function?   ()
+.toLowerCase()   is a method that comes with strings to make them lowercase, which is handy. 
+.includes()   method to check if the value includes.... this.state.searchfield
+console.log()  filtered Robots  variable and see what we get..... we get an error (this is tricky.) 
+the value of input from our searchbox file does not have this has a value.... thisd is referring to 
+event and since this has the value of inpur from the searchbox component we get an error.  
+and input doesnt have state.robots.   everytime you make your own methods on a component use arrow functions
+onSearchChange = (event) => {...}    --- youll have to get used tot this.  
+this.setState()   is a method that comes with react we always use it wwhen we want to change state . 
+now we need to communicte it to the filtered robots.   
+put the const filteredRObots  in our render functio instead..  the app can past down things such as props. 
+with an event we alwqays have event.target.value
+
+
+in a while we will be using Redux. 29 07 2020 :  styling you react app ?  Use css. Index.css. 
+app.css   and font face -- SEGA font family?   
