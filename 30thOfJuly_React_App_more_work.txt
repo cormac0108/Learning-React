@@ -13,3 +13,42 @@ react is just javascript.  if it is slow then w can do an if statement.  with an
 robofriends. tha displays loading.  make a loading bar.   interact wewith cmponenets.  the basics in react.
 Our react knowledge. 
 
+lets make a component, that lets us scroll. Reuse. scroll function component. Scroll is not a self
+closing component - it wraps around. to do this  we have children.  so now , state , props ,  children 
+children will allow us to do this. using props.children  we can create components that wrap other components.
+using childre.  for components that wrap other components.  --- a css way to make the element scrollable.   
+now we have a scrollable component. react is so powerful. it trickles down. the components we made are 
+reusabe. Once you get used to it - react will be  great.  we tell it what state it has.  and react 
+takes care of the rest. react is a view layer.   
+
+one final thing:  organizatrion. use folders. folder structure.  one folder for components.
+and one folder for containers. put your pure fuctions inside of the compoentns folder. 
+put your app js realted stuff in the container folder. !  for NOT remembr this synthax? 
+  so if (!robots.length) {}  if robots.length doesn not = true (1) then it is false. 
+use conditional if else. for efficiency. do a ternary operator. 
+package,json   pre-built scripts.  npm run build  --- gives us all our files but this time they 
+are optimized.  now we can deploy our build folder anywhere.  it minimizes all our files. 
+
+update a project?   npm audit fix   in the command line .   npm install. fix the vulnerabilities.
+check and see what the changes are in these libraries. npm update   -- and your versions get 
+updated. it upgrades te ibraries tot he highest version. using the ^ makes sure we only 
+update what is in the minor release - to prevent any amjor changes. - breaking changes.
+npm audit fix --force    :after you have checked the updates.     then npm audit   again 
+and you see that we have 0 vulnerabilities. 
+do npm start   script and when is asks you for a browser type Y   there you go your 
+project is done and update. now you can push it to GitHub  goit commands.  
+git add .     ,  git commit -m "message"   , git push origin master , 
+now your project is fully up to date.   the more dependencies you haver the more maintenancee 
+you have to do.  update the package.json file.   
+
+React review:   components - to combine things into containers and then finally have a page. 
+the concept of one way data flow.   from state to props.  and you can have multiple 
+children. only a container component can change state.  React has an awesome Ecosystem 
+lots of cool tools.   one image the majority of what react it. react component. 
+ReactDOM.render( <Clock/> , document.getElementById('root'));
+great job getting this far.  any time a child component changes it triggers an event on the
+parent component.   Deterministically. Render it accordingly. We hand react the data. 
+react gives us great errors.  the  render ( )  function.  react is great for building web apps. 
+
+
+
