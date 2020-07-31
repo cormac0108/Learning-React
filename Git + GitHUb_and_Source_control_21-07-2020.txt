@@ -1,0 +1,64 @@
+
+Lets talk about git GitHUb and Source Control
+
+a pull request.   collaboration.   projects. source control. making changes to your project. 
+The ultimate version.  a central version.  source control.  github is for this.  A central place. 
+workflow.  merge conflict.    start a github account.   its where we work (github).
+get github for desktop.    use the terminal or the command prompt. 
+a read me to describe our project.  start a new project called background generator. on github. a new 
+repository.  then go into your folder for your project.  cd into it. then  do
+git clone URL  -  and enter the url of the repositroy you want to clone 
+and then bam! its done.   you now have this - also the .git folder allows you to communicate with git. 
+clone or download. Use https ,  copy the url.  
+now you can move your files into the background-genrator file we got from github
+now you can cd into background generator. and here is another command. 
+next you can  type git status  and it tells you what you have in your folder and whether the files in the
+folder are being tracked by git or not.  git add index.html  
+to add files.   git add file name. 
+now you can do git status again and see the changes to be commited. 
+the next step is to do   git commit -m "adding starting project"    and  the -m adds a message to your commit 
+when you commit these files.  now the next step is we need to let github know that these are the changes 
+to do this we do...  git push   -- it has now been pushed to this repository.
+
+so  git status,  git add,  git commit -m "message" , git push  
+now check your reposityory on github.
+
+
+
+we want commited 
+repository. 
+
+git clone -- then the url of the repo 
+git commands wont work if your in a foolder that doesnt have the .git folder. 
+
+so go into background-generator
+
+edit the code ,  then do git status and it shows you that you modded the html file. 
+git add index.html    if you had multiple files and you wanted to commit them all at once you could just 
+do git add .   git commit -m "changes"  . git push  . clear. now you can check the comits on the
+github repo  ... next is to update the code   git pull   --- to pull whatever is the latest 
+now you come in in the morning and to update the changes you do   git pull     and your code updates 
+from the changes that were made to the repo. 
+
+22 - 07 -2020
+workflow.  branching    - master --- the authority --- when yout done merge into master.  master in terminal 
+tells youyou are on the master branch.  git pull  to update get the latest --- 
+dont work on master always branch off. 
+git branch 
+git branch littlefeature   --- to create a new branch called little feature  to go to littlefeature do
+git checkout littlefeature 
+make a change.    git add .  git status .  git commit   git push   now go to github and loook at the
+pull request 
+compare pull request.  git pull to get the latest update.
+Conflict?   git branch bigfeature       git checkout bigfeature
+git add .        git commit -m "message"  .. git push   .. git log  ... git status ... 
+theres no upstream?    just copy the code that they give you and enter it.
+now look at the pull request obnn github and you can see the changes.    
+make sure that when you are on the master branch you are up to date by using   git pull  to get the latest 
+to avoid conflicts.    git checkout conflict   git merge master  ---- will merge it to master
+it shows merge conflict.   head  
+
+git add .   git commit -m "fixing conflict"  .. git status ... git push .. 
+git push origin conflict
+that is the git workflow. pull master and merge master into your branch.  git pushb to create a pull request 
+from your branch.   get used to it.  nice workflow. 
