@@ -235,3 +235,163 @@ const add = (a , b) => a + b;
 //its on one line. write better cleaner code.
 // ternary operatoor . control flow. 
 // condition? expr1 : expr2;
+
+function isUserValid (bool) {
+    return bool;
+}
+
+let answer = isUserValid(true) ? "you may enter" : "Access denied"
+function condition () { 
+    if (isUserValid(true)) {
+        return "you are allowed"
+
+    } else {
+        return " you are not allowed. "
+    }
+}
+const answer2 = condition();
+//ternary operator is nicer. 
+
+//switch statement. good for multiple if else cases and then an else. 
+function moveCommand (direction ) {
+    let whatHappens;
+    switch(direction) {
+        case 'forward':
+            whatHappens = 'you encounter a monster';
+            break;
+        case 'right':
+            whatHappens = 'you encounter a monster';
+            break;
+        case 'back':
+             whatHappens = 'you encounter a monster';
+            break;
+        default: 
+        whatHappens = "lease enter a valid direction";
+    }
+    return whatHappens;
+}
+
+// advanced functions 
+//separate scope - local variables.  Closure 
+//children always have access to their parent scope but not vice versa. 
+const first = () => {
+    const greet = 'HI';
+    const second = () => {
+        const name = 'bob' ;
+        alert(greet);
+    }
+    return second;
+}
+
+const newFunc = first();
+newFunc();
+
+//Currying - a function inside of a function. input. params. one at a time. 
+// more extensible.
+const multiply = (a, b) => a*b;
+const curriedMultiply = (a) => (b) => a * b;
+const multiplyBy5 = curriedMultiply(5);
+multiplyBy5(5);  //should return 25
+curriedMultiply(5)(10);
+
+//compose - put two functions together to form another function. 
+const compose = (f , g) => (a) => f(g(a));
+
+
+//Es8? 2017.... 
+//string padding.
+'hello'.padStart(10);
+'hello'.padEnd(10);
+// commas at the end
+
+const fun = (
+    a,
+    b,
+    c,
+) => {
+    console.log(a);
+}
+fun(1,2,3,4)
+
+// object methods.
+
+Object.values
+Object.keys
+Object.entries 
+
+let obj = {
+    username0: 'santa',
+    username1: 'bob',
+    username2: 'michael',
+}
+
+Object.keys(obj).forEach((key, index) => {
+    console.log(key, obj[key]);
+})
+
+Object.values(obj).forEach(value => {
+    console.log(value);
+})
+
+Object.entries(obj).forEach(value => {
+    console.log(value);
+})
+
+Object.entries(obj).forEach(value => {
+    return value[1] + value[0].replace('username' , ' ');
+})
+
+//Looping in js. 
+// for of 
+// for in
+// // iterating over an array. -arrays, strings. 
+for ( item of basket) {
+    console.log(item);
+}
+
+for ( item of 'basket') {
+    console.log(item);
+}
+
+
+// modules.  - bundlers. webpack + es6. a module system.  different ways. 
+// well be using this alot in react - really clean. 
+//js2 
+// es6 + webpack. 
+
+export const add = (a, b) => a + b;
+//or 
+export default function (a , b) {
+    return a + b;
+}
+
+//js2 
+import {add} from './add' ;
+//or 
+import add from  './add'; 
+
+// very useful tool. bundle.js --- file. 
+
+
+// npm packages? the npm registry. yarn = same idea.  different types of packages
+// 3 types of packages. scripts that other people have written. 
+
+//async js? 
+// communicating with servers - use json. stringify. 
+// json format is beter. "" with json. transfer data. 
+JSON.parse()
+JSON.stringify()
+
+
+const user = {
+    firstName: "John",
+    lastName: "tombo",
+}
+JSON.stringify(user);
+//then the server will
+JSON.parse(user); 
+//and understand what you want. 
+//How things are working. 
+
+
+//AJAx? 
